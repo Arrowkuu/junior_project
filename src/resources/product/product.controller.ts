@@ -32,10 +32,10 @@ class ProductController implements Controller {
         );
 
         // Get list product route.
-        this.router.get(`${this.path}/get`, this.getProductList);
+        this.router.get(`${this.path}`, this.getProductList);
 
         // Get product details route.
-        this.router.get(`${this.path}/get/:id`, this.getProduct);
+        this.router.get(`${this.path}/:id`, this.getProduct);
 
         // Delete product route.
         this.router.delete(`${this.path}/delete/:id`, this.deleteProduct);

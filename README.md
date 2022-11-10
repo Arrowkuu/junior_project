@@ -3,9 +3,10 @@
 Aplikacja wykonana na potrzeby rekrutacji na stanowisko Junior Node.js Developer, według wytycznych przedstawionych w otrzymanym pliku `junior-nodejs-task.pdf`.
 
 #### Wykorzystane frameworki i technologie:
-- Node.js + Express
-- Typescript
-- MySQL
+
+-   Node.js + Express
+-   Typescript
+-   MySQL
 
 ## Instrukcja instalacji
 
@@ -43,6 +44,7 @@ npm start
 API posiada 5 endpointów obsługujących produkty. Do wykonania testów API zaleca się korzystanie z narzędzia `Postman`
 
 ### Schemat encji w tabeli produkty
+
 ```js
 Product {
   Id: number;
@@ -55,22 +57,25 @@ Product {
 # -
 
 ### Tworzenie nowego produktu
- ![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
- ![](https://img.shields.io/static/v1?label=&message=PUT&color=blue)
+
+![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
+![](https://img.shields.io/static/v1?label=&message=PUT&color=blue)
+
 ```diff
 /api/products/create
 ```
 
 ![](https://img.shields.io/static/v1?label=&message=Parametry&color=red)
+
 ```js
 {
-  Name: string;
-  Price: number;
+    Name: string;
+    Price: number;
 }
 ```
 
-- **Name** - nazwa produktu, parametr wymagany, maksymalna ilość znaków 100.
-- **Price** - cena produktu, parametr wymagany.
+-   **Name** - nazwa produktu, parametr wymagany, maksymalna ilość znaków 100.
+-   **Price** - cena produktu, parametr wymagany.
 
 ![](https://img.shields.io/static/v1?label=&message=Response&color=blue)
 
@@ -89,26 +94,30 @@ Product {
 # -
 
 ### Aktualizowanie istniejącego produktu
- ![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
- ![](https://img.shields.io/static/v1?label=&message=POST&color=blue)
+
+![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
+![](https://img.shields.io/static/v1?label=&message=POST&color=blue)
+
 ```diff
 /api/products/update
 ```
 
 ![](https://img.shields.io/static/v1?label=&message=Parametry&color=red)
+
 ```js
 {
-  Id: number;
-  Name: string;
-  Price: number;
+    Id: number;
+    Name: string;
+    Price: number;
 }
 ```
 
-- **Id** - numer identyfikacyjny produktu, parametr wymagany.
-- **Name** - nazwa produktu, parametr wymagany, maksymalna ilość znaków 100.
-- **Price** - cena produktu, parametr wymagany.
+-   **Id** - numer identyfikacyjny produktu, parametr wymagany.
+-   **Name** - nazwa produktu, parametr wymagany, maksymalna ilość znaków 100.
+-   **Price** - cena produktu, parametr wymagany.
 
 ![](https://img.shields.io/static/v1?label=&message=Response&color=blue)
+
 ```json
 {
     "status": 200,
@@ -125,18 +134,22 @@ Product {
 # -
 
 ### Pobieranie listy produktów
- ![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
- ![](https://img.shields.io/static/v1?label=&message=GET&color=blue)
+
+![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
+![](https://img.shields.io/static/v1?label=&message=GET&color=blue)
+
 ```diff
-/api/products/get
+/api/products
 ```
 
 ![](https://img.shields.io/static/v1?label=&message=Parametry&color=red)
+
 ```js
-Brak
+Brak;
 ```
 
 ![](https://img.shields.io/static/v1?label=&message=Response&color=blue)
+
 ```json
 {
     "status": 200,
@@ -167,19 +180,24 @@ Brak
 # -
 
 ### Pobieranie szczegółów wybranego produktu
- ![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
- ![](https://img.shields.io/static/v1?label=&message=GET&color=blue)
+
+![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
+![](https://img.shields.io/static/v1?label=&message=GET&color=blue)
+
 ```diff
-/api/products/get/:id
+/api/products/:id
 ```
 
 ![](https://img.shields.io/static/v1?label=&message=Parametry&color=red)
+
 ```js
+
 ```
 
 **:id** - identyfiaktor produktu, parametr wymagany.
 
 ![](https://img.shields.io/static/v1?label=&message=Response&color=blue)
+
 ```json
 {
     "status": 200,
@@ -196,19 +214,24 @@ Brak
 # -
 
 ### Usuwanie wybranego produktu
- ![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
- ![](https://img.shields.io/static/v1?label=&message=DELETE&color=blue)
+
+![](https://img.shields.io/static/v1?label=&message=Endpoint&color=green)
+![](https://img.shields.io/static/v1?label=&message=DELETE&color=blue)
+
 ```diff
 /api/products/delete/:id
 ```
 
 ![](https://img.shields.io/static/v1?label=&message=Parametry&color=red)
+
 ```js
+
 ```
 
 **:id** - identyfiaktor produktu, parametr wymagany.
 
 ![](https://img.shields.io/static/v1?label=&message=Response&color=blue)
+
 ```json
 {
     "status": 200,
