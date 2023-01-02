@@ -1,6 +1,6 @@
 # Wstęp do projektu "junior_project"
 
-Aplikacja wykonana na potrzeby rekrutacji na stanowisko Junior Node.js Developer, według wytycznych przedstawionych w otrzymanym pliku `junior-nodejs-task.pdf`.
+Prosta aplikacja wykonana na potrzeby rekrutacji.
 
 #### Wykorzystane frameworki i technologie:
 
